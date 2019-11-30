@@ -22,7 +22,7 @@ public class Home3_6 {
         if (t) {
             System.out.println("Массив возрастоющий");
         } else {
-            System.out.println("Массив убывающий");
+            System.out.println("Массив не возрастающий");
         }
     }
 }

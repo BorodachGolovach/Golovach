@@ -1,12 +1,14 @@
 public class Home3_1 {
     public static void main(String[] args) {
-        int[] a = {2, 4, 6, 7, 8, 10, 12, 14, 16, 18, 20};
+        int[] a = new int[20];
+        for (int j = 0, b = 0; ++b < 20; a[j++] = ++b) {
+        }
         System.out.print("\nВывод элементов массива a в строку: ");
-        for (int i = 0; i < a.length; i++) {
+        for (int i = 0; i < a[i]; i++) {
             System.out.print(a[i] + " ");
         }
         System.out.println("\nВывод элементов массива a в столбик: ");
-        for (int i = 0; i < a.length; i++) {
+        for (int i = 0; i < a[i]; i++) {
             System.out.println(a[i] + " ");
         }
     }

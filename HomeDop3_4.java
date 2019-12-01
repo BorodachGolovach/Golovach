@@ -8,7 +8,7 @@ public class HomeDop3_4 {
         int j = scanner.nextInt();
         int[] a;
         a = new int[j];
-        int min = a[0];
+        int min = 100;
         for (int i = 0; i < j; i++) {
             a[i] = (int) ((Math.random() * 99) + 1);
             System.out.print(a[i] + "  ");
@@ -19,9 +19,10 @@ public class HomeDop3_4 {
             if (a[i] % 2 == 1) {
                 System.out.print(a[i] + " ");
                 min = Math.min(min, a[i]);
-                System.out.print("\nНаименьший нечетный элемент " + min);
+
                 }
             }
+        System.out.print("\nМинимальное число нечетного массива  " + min);
         }
 
     }

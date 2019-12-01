@@ -5,7 +5,7 @@ public class HomeDop3_9 {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Input :");
         int j = scanner.nextInt();
-        int min = 0;
+        int min = 10;
         int[] a = new int[j];
         for (int i = 0; i < j; i++) {
             a[i] = (int) (Math.random() * 9) + 1;
@@ -18,6 +18,6 @@ public class HomeDop3_9 {
                 min = Math.min(min, a[i]);
             }
         }
-        System.out.println("\nМинимальное число массива " + min);
+        System.out.println("\nМинимальное число четного массива " + min);
     }
 }

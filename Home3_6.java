@@ -5,8 +5,7 @@ public class Home3_6 {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Input :");
         int j = scanner.nextInt();
-        int[] a;
-        a = new int[j];
+        int[] a = new int[j];
         boolean t = true;
         for (int i = 0; i < j; i++) {
             a[i] = (int) (Math.random() * 10);
@@ -14,7 +13,7 @@ public class Home3_6 {
         }
         System.out.println();
         for (int i = 1; i < j; i++) {
-            if (a[i]<=a[i-1]) {
+            if (a[i] <= a[i - 1]) {
                 t = false;
                 break;
             }

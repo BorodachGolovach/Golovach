@@ -10,7 +10,9 @@ public class Home3_5 {
         int[] a = new int[j];
         int[] b = new int[k];
         double sSum1 = 0;
+        double sSum1_1 = 0;
         double sSum2 = 0;
+        double sSum2_2 = 0;
         for (int i = 0; i < j; i++) {
             a[i] = (int) (Math.random() * 15);
         }
@@ -27,24 +29,22 @@ public class Home3_5 {
         }
         System.out.print("\narithmetical mean Massiv 1  ");
         for (int i = 0; i < j; i++) {
-            if (i < j) {
-                sSum1 += a[i] / j;
-            }
+            sSum1 += a[i];
         }
-        System.out.print(sSum1 + " ");
+        System.out.print((sSum1 / j) + " ");
 
         System.out.print("\narithmetical mean Massiv 2  ");
         for (int i = 0; i < k; i++) {
-            if (i < k) {
-                sSum2 += b[i] / k;
-            }
+            sSum2 += b[i];
         }
-        System.out.print(sSum2 + " ");
+        System.out.print((sSum2 / k) + " ");
         System.out.println();
-        if (sSum1 == sSum2) {
+        sSum1_1 = sSum1 / j;
+        sSum2_2 = sSum2 / k;
+        if (sSum1_1 == sSum2_2) {
             System.out.println("arithmetical mean Massiv 1 = arithmetical mean Massiv 2");
         }
-        if (sSum1 > sSum2) {
+        if (sSum1_1 > sSum2_2) {
             System.out.println("arithmetical mean Massiv 1 > arithmetical mean Massiv 2");
         } else {
             System.out.println("arithmetical mean Massiv 1 < arithmetical mean Massiv 2");

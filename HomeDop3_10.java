@@ -8,7 +8,6 @@ public class HomeDop3_10 {
         int max = 0;
         int iMax = 0;
         int[] a = new int[j];
-        int t = a[0];
         for (int i = 0; i < j; i++) {
             a[i] = (int) (Math.random() * 10);
             System.out.print(a[i] + "   ");
@@ -25,6 +24,6 @@ public class HomeDop3_10 {
         a[iMax] = a[0];
         a[0] = max;
         for (int i = 0; i < j; i++)
-        System.out.print(a[i]+ "  ");
+            System.out.print(a[i] + "  ");
     }
 }

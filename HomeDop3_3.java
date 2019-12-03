@@ -5,8 +5,7 @@ public class HomeDop3_3 {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Input :");
         int j = scanner.nextInt();
-        int[] a;
-        a = new int[j];
+        int[] a = new int[j];
         int sum = 0;
         double sumS = 0;
         int c = 4;

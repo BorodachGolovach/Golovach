@@ -5,9 +5,7 @@ public class Home3_4 {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Input :");
         int j = scanner.nextInt();
-        int[] a;
-        a = new int[j];
-        int t = 0;
+        int[] a = new int[j];
         for (int i = 0; i < j; i++) {
             a[i] = (int) (Math.random() * 20);
             System.out.print(a[i] + "   ");

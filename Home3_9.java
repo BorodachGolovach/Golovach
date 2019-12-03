@@ -21,24 +21,22 @@ public class Home3_9 {
             int[] w = Arrays.copyOfRange(a, a.length / 2, a.length);
             System.out.print("\nПервая половина массива: " + Arrays.toString(b));
             System.out.print("\nВторая половина массива: " + Arrays.toString(w));
-            for (int i = 0; i < j / 2; i++) {
-                if (i < j / 2) {
-                    sumF += b[i];
-                }
+            for (int i = 0; i < j/2; i++) {
+                sumF += b[i];
             }
-            for (int i = 0; i < j / 2; i++) {
-                if (i < j / 2) {
-                    sumS += w[i];
-                }
+            for (int i = 0; i <= j/2; i++) {
+                sumS += w[i];
             }
             System.out.println();
-            if (sumF == sumS) {
-                System.out.println("mean Massiv 1 = mean Massiv 2");
-            }
+            System.out.println(sumF + " ");
+            System.out.println(sumS + " ");
             if (sumF > sumS) {
-                System.out.println("mean Massiv 1 > mean Massiv 2");
+                System.out.println("sum Massiv 1 > sum Massiv 2");
             } else {
-                System.out.println("mean Massiv 1 < mean Massiv 2");
+                System.out.println("sum Massiv 1 < sum Massiv 2");
+            }
+            if (sumF == sumS) {
+                System.out.println("sum Massiv 1 = sum Massiv 2");
             }
         }
     }

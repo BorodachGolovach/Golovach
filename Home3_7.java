@@ -5,8 +5,7 @@ public class Home3_7 {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Input :");
         int j = scanner.nextInt();
-        int[] a;
-        a = new int[j];
+        int[] a = new int[j];
         int max = 0;
         int w = 1;
         for (int i = 0; i < j; i++) {
@@ -17,7 +16,7 @@ public class Home3_7 {
         for (int i = 0; i < j; i++) {
             if (max < a[i]) {
                 max = a[i];
-                w = i+1;
+                w = i + 1;
             }
         }
         System.out.println("\nНомер максимального элемента в масcиве " + w);

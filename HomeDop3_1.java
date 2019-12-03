@@ -5,17 +5,16 @@ public class HomeDop3_1 {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Input :");
         int j = scanner.nextInt();
-        int[] a;
-        a = new int[j];
+        int[] a = new int[j];
         int sum = 1;
         for (int i = 0; i < j; i++) {
-            a[i] = (int) ((Math.random() * 99)+1);
+            a[i] = (int) ((Math.random() * 99) + 1);
             System.out.print(a[i] + "  ");
         }
         System.out.println();
         System.out.print("\nЧисла кратные 3: ");
         for (int i = 0; i < j; i++) {
-            if (a[i] % 3 == 0 ) {
+            if (a[i] % 3 == 0) {
                 System.out.print(a[i] + " ");
                 sum *= a[i];
             }
